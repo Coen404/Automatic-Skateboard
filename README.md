@@ -4,6 +4,3 @@ Dit repository bevat de Arduino-code versies voor het 'Automatic Skateboard'-pro
 
 ## Gebruik
 Open het `.ino` bestand in de Arduino IDE en upload naar de microcontroller.
-
-## Team
-Coen, Quinten, Mika, Enrico
