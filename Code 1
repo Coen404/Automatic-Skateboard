@@ -1,0 +1,21 @@
+const int fsrFront = A0;  // Front sensor (GO)
+const int fsrBack = A2;   // Back sensor (BRAKE)
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int front = analogRead(fsrFront);
+  int back = analogRead(fsrBack);
+
+  if (front > 100 && back < 100) {
+    Serial.println("Accelerate");
+  } else if (back > 100 && front < 100) {
+    Serial.println("Brake");
+  } else {
+    Serial.println("Idle");
+  }
+
+  delay(100);
+}
